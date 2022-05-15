@@ -1,0 +1,23 @@
+#nano config by gandori 
+#2021-11-21
+#path ~/
+
+set linenumbers
+set autoindent
+set smooth
+set mouse
+set softwrap
+set tabsize 5
+set boldtext
+set constantshow
+set morespace
+
+
+#support colors
+#whiete ,black blue ,green ,red ,cyan ,yellow ,magenta
+set titlecolor black,cyan
+set numbercolor black,cyan
+set functioncolor black,cyan
+set keycolor black,cyan
+set statuscolor black,cyan
+set selectedcolor black,white
