@@ -12,7 +12,7 @@ font $font
 #exec --no-startup-id xrandr --output HDMI-A-0 --scale 0.6x0.6
 
 #background image
-exec_always --no-startup-id feh --bg-scale ~/.config/i3/bg_2.jpeg
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/bg_2.jpeg
 
 #compton
 exec --no-startup-id compton
