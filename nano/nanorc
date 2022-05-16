@@ -1,6 +1,5 @@
 #nano config by gandori 
-#2021-11-21
-#path ~/
+#~/.config/nano/nanorc
 
 set linenumbers
 set autoindent
