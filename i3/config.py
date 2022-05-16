@@ -33,8 +33,8 @@ def main(arg):
 	if arg == "update": print(update())
 	elif arg == "installed": print(installed())
 	elif arg == "inet": print(inet())
-	elif arg == "cpu": print(str(psutil.cpu_percent(1)) +"%")
-	elif arg == "ram": print(str(psutil.virtual_memory()[2]) +"%")
+	elif arg == "cpu": print(f"{psutil.cpu_percent(1)}%")
+	elif arg == "ram": print(f"{psutil.virtual_memory()[2]}%")
 
 if __name__ == "__main__":
 	main(sys.argv[1])
