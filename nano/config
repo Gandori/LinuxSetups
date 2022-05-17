@@ -1,6 +1,8 @@
 #nano config by gandori 
 #~/.config/nano/nanorc
 
+include ~/.config/nano/syntax/*
+
 set linenumbers
 set autoindent
 set smooth

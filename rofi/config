@@ -1,3 +1,3 @@
 #rofi congig by Gandori
 #~/.config/rofi/
-rofi.theme: ~/.config/rofi/themes/sidebar.rasi
+rofi.theme: ~/linux_setup/rofi/themes/sidebar.rasi

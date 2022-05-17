@@ -9,13 +9,11 @@ set $shift Shift
 #font
 font $font
 
-#exec --no-startup-id xrandr --output HDMI-A-0 --scale 0.6x0.6
-
 #background image
-exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/bg_2.jpeg
+exec_always --no-startup-id feh --bg-scale ~/linux_setup/i3/wallpapers/bg_2.jpeg
 
 #compton
-exec --no-startup-id compton
+exec --no-startup-id compton --config ~/linux_setup/compton/config
 
 #reload the configuration file
 bindsym $mod+$shift+r reload
@@ -39,10 +37,10 @@ bindsym $mod+$return exec --no-startup-id gnome-terminal
 bindsym $mod+f exec --no-startup-id firefox
 
 #start rofi
-bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Tab exec rofi -show window -config ~/linux_setup/rofi/config
 
 #start rofi dmenu
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show run -config ~/linux_setup/rofi/config
 
 #kill focused window
 bindsym $mod+$shift+$return kill
@@ -102,7 +100,7 @@ mode "resize" {
 
 #bar
 bar {
-	status_command i3blocks -c ~/.config/i3/bar.conf
+	status_command i3blocks -c ~/linux_setup/i3blocks/config
 	colors{
 		background #252a33
 		statusline #141a21
@@ -114,3 +112,4 @@ bar {
 	separator_symbol"|"
 }
 
+exec bash ~/linux_setup/screen/config

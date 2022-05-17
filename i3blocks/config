@@ -3,28 +3,28 @@ color=#ffffff
 
 [CPU]
 label=CPU:
-command= python3 ~/.config/i3/config.py cpu	
+command=python3 ~/.config/i3/config.py cpu
 interval=1
 
 [RAM]
 label=RAM:
-command= python3 ~/.config/i3/config.py ram	
+command=python3 ~/.config/i3/config.py ram	
 interval=1
 
 [inet]
 color=#00ff00
-command= python3 ~/.config/i3/config.py inet	
+command=python3 ~/.config/i3/config.py inet	
 interval=65
 markup=pango
 
 [installed]
 label=Installed:
-command= python3 ~/.config/i3/config.py installed
+command=python3 ~/.config/i3/config.py installed
 interval=55
 
 [updates]
 label=Updates:
-command= python3 ~/.config/i3/config.py update
+command=python3 ~/.config/i3/config.py update
 interval=60
 
 [time]
