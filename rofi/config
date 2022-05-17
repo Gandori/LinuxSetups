@@ -1,0 +1,3 @@
+#rofi congig by Gandori
+#~/.config/rofi/
+rofi.theme: ~/.config/rofi/themes/sidebar.rasi
