@@ -1,7 +1,7 @@
 #nano config by gandori 
-#~/.config/nano/nanorc
+#~/.config/
 
-include ~/nano/syntax/*
+include ~/.config/nano/syntax/*
 
 set linenumbers
 set autoindent
@@ -25,7 +25,3 @@ set statuscolor black,cyan
 set selectedcolor black,white
 set errorcolor red
 unset backup
-
-bind ^C copy main
-bind ^V paste all
-bind ^S savefile main

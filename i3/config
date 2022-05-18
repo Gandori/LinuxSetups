@@ -30,6 +30,9 @@ default_border pixel 5
 #start terminal
 bindsym $mod+$return exec --no-startup-id gnome-terminal
 
+#start virtual box
+bindsym $mod+m exec --no-startup-id virtualbox
+
 #start firefox
 bindsym $mod+f exec --no-startup-id firefox
 
