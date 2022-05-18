@@ -1,7 +1,7 @@
 all configs: https://github.com/Gandori/linux_setup
  
 -i3-
-	install: sudo apt install i3-vm
+	install: sudo apt install i3-wm
 
 -statusbar-
 	install: sudo apt install i3blocks
