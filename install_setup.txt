@@ -1,7 +1,7 @@
 all configs: https://github.com/Gandori/linux_setup
  
 -i3-
-	install: sudo apt install i3-vm
+	install: sudo apt install i3-wm
 
 -statusbar-
 	install: sudo apt install i3blocks
@@ -12,17 +12,12 @@ all configs: https://github.com/Gandori/linux_setup
 -rofi-
 	install: sudo apt install rofi
 	
--compton-
-	install: sudo apt install compton
-	
--nano-
-	install: sudo apt install nano
-
 -conky-
 	install: sudo apt install conky
 	
--bash-
-	configs: ~/.bashrc
-
 -powerline-
 	install: sudo apt install powerline
+
+~/.bashrc
+~/.nanorc
+~/.profile 

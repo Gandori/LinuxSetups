@@ -1,7 +1,7 @@
 #nano config by gandori 
 #~/.config/nano/nanorc
 
-include ~/.config/nano/syntax/*
+include ~/linux_setup/nano/syntax/*
 
 set linenumbers
 set autoindent
@@ -12,13 +12,15 @@ set tabsize 5
 set boldtext
 set constantshow
 set morespace
-
-
-#support colors
-#whiete ,black blue ,green ,red ,cyan ,yellow ,magenta
+set brackets ""')]}"
+set matchbrackets"(<[{)>]}"
+set quotestr "^([]*([!#%:;>|}]|//))+"
+set whitespace ">."
 set titlecolor black,cyan
 set numbercolor black,cyan
 set functioncolor black,cyan
 set keycolor black,cyan
 set statuscolor black,cyan
 set selectedcolor black,white
+set errorcolor red
+unset backup

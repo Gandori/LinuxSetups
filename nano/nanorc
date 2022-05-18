@@ -1,0 +1,31 @@
+#nano config by gandori 
+#~/.config/nano/nanorc
+
+include ~/nano/syntax/*
+
+set linenumbers
+set autoindent
+set smooth
+set mouse
+set softwrap
+set tabsize 5
+set boldtext
+set constantshow
+set morespace
+set brackets ""')]}"
+set matchbrackets "(<[{)>]}"
+set quotestr "^([]*([!#%:;>|}]|//))+"
+set whitespace ">."
+set zap
+set titlecolor black,cyan
+set numbercolor black,cyan
+set functioncolor black,cyan
+set keycolor black,cyan
+set statuscolor black,cyan
+set selectedcolor black,white
+set errorcolor red
+unset backup
+
+bind ^C copy main
+bind ^V paste all
+bind ^S savefile main
