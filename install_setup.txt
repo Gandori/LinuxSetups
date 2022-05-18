@@ -12,12 +12,6 @@ all configs: https://github.com/Gandori/linux_setup
 -rofi-
 	install: sudo apt install rofi
 	
--compton-
-	install: sudo apt install compton
-	
--nano-
-	install: sudo apt install nano
-
 -conky-
 	install: sudo apt install conky
 	
