@@ -67,7 +67,7 @@ function requires()
 		read -p "Möchten Sie jetz alle Installieren?[y/n]" input
 		if [ $input == y ]; then
 			for p in ${programs[@]}; do
-				sudo apt install $p
+				sudo apt install $p -y
 			done
 			break
 		elif [ $input == n ]; then
