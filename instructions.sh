@@ -26,6 +26,9 @@ function if_file_exist()
 					break
 				fi
 			done
+		else
+			cp $HOME/$parent_folder/$f $Home/
+			echo "Die Datei $f wurde verschoben"
 		fi
 	done
 }
