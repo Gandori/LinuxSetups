@@ -16,8 +16,8 @@ function if_file_exist()
 		if [ -f $home/$f ]; then
 			echo "Die Datei $f exestiert bereits in $home/"
 			while [ true ]; do
-				read -p "Soll die Datei $f ersetzt werden?[j/n]" input
-				if [ $input == j ]; then
+				read -p "Soll die Datei $f ersetzt werden?[y/n]" input
+				if [ $input == y ]; then
 					sudo rm $home/$f
 					sudo cp $home/$parent_folder/$f $home/
 					echo "Die Datei $f wurde ersetzt"
@@ -42,9 +42,9 @@ function move_files()
 	done
 
 	while [ true ]; do
-		read -p "Sollen die Dateien Verschoben werden?[j/n]" input
+		read -p "Sollen die Dateien Verschoben werden?[y/n]" input
 		echo ""
-		if [ $input == j ]; then
+		if [ $input == y ]; then
 			if_file_exist
 			break
 		elif [ $input == n ]; then
@@ -64,8 +64,8 @@ function requires()
 	echo ""
 
 	while [ true ]; do
-		read -p "Möchten Sie jetz alle Installieren?[j/n]" input
-		if [ $input == j ]; then
+		read -p "Möchten Sie jetz alle Installieren?[y/n]" input
+		if [ $input == y ]; then
 			for p in ${programs[@]}; do
 				sudo apt install $p
 			done
