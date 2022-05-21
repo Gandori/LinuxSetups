@@ -12,7 +12,7 @@ function end_setup()
 function if_file_exist()
 {
 	for f in ${files[@]}; do
-		if [ $HOME/$f ]; then
+		if [ -f $HOME/$f ]; then
 			echo "Die Datei $f exestiert bereits in $HOME/"
 			while [ true ]; do
 				read -p "Soll die Datei $f ersetzt werden?[j/n]" input
