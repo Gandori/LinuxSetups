@@ -17,8 +17,8 @@ function if_file_exist()
 			while [ true ]; do
 				read -p "Soll die Datei $f ersetzt werden?[j/n]" input
 				if [ $input == j ]; then
-					rm $HOME/$f
-					cp $HOME/$parent_folder/$f $Home/
+					sudo rm $HOME/$f
+					sudo cp $HOME/$parent_folder/$f $Home/
 					echo "Die Datei $f wurde ersetzt"
 					break
 				elif [ $input == n ]; then
@@ -27,7 +27,7 @@ function if_file_exist()
 				fi
 			done
 		else
-			cp $HOME/$parent_folder/$f $Home/
+			sudo cp $HOME/$parent_folder/$f $Home/
 			echo "Die Datei $f wurde verschoben"
 		fi
 	done
