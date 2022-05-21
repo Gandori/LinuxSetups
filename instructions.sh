@@ -27,7 +27,7 @@ function if_file_exist()
 				fi
 			done
 		else
-			sudo cp $HOME/$parent_folder/$f $Home/
+			sudo cp $HOME/$parent_folder/$f $HOME/
 			echo "Die Datei $f wurde verschoben"
 		fi
 	done
