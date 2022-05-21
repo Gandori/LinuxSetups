@@ -18,7 +18,7 @@ function if_file_exist()
 				read -p "Soll die Datei $f ersetzt werden?[j/n]" input
 				if [ $input == j ]; then
 					rm $HOME/$f
-					cp $Home/$parent_folder/$f $Home/
+					cp $HOME/$parent_folder/$f $Home/
 					echo "Die Datei $f wurde ersetzt"
 					break
 				elif [ $input == n ]; then
