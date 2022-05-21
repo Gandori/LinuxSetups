@@ -2,6 +2,7 @@
 parent_folder=linux_setup
 programs=(i3 i3blocks nano rofi feh powerline)
 files=(.bashrc .bash_aliases .profile)
+home=~/
 
 function end_setup()
 {
@@ -12,13 +13,13 @@ function end_setup()
 function if_file_exist()
 {
 	for f in ${files[@]}; do
-		if [ -f $HOME/$f ]; then
-			echo "Die Datei $f exestiert bereits in $HOME/"
+		if [ -f $home/$f ]; then
+			echo "Die Datei $f exestiert bereits in $home/"
 			while [ true ]; do
 				read -p "Soll die Datei $f ersetzt werden?[j/n]" input
 				if [ $input == j ]; then
-					sudo rm $HOME/$f
-					sudo cp $HOME/$parent_folder/$f $Home/
+					sudo rm $home/$f
+					sudo cp $home/$parent_folder/$f $home/
 					echo "Die Datei $f wurde ersetzt"
 					break
 				elif [ $input == n ]; then
@@ -27,7 +28,7 @@ function if_file_exist()
 				fi
 			done
 		else
-			sudo cp $HOME/$parent_folder/$f $HOME/
+			sudo cp $home/$parent_folder/$f $home/
 			echo "Die Datei $f wurde verschoben"
 		fi
 	done
@@ -37,7 +38,7 @@ function move_files()
 {
 	echo "Folgende Dateien müssen in ein anderes Verzeichnis"
 	for f in ${files[@]}; do
-		echo "$HOME/$parent_folder/$f nach $HOME/"
+		echo "$home/$parent_folder/$f nach $home/"
 	done
 
 	while [ true ]; do
