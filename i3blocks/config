@@ -28,30 +28,31 @@ command=python3 ~/linux_setup/i3blocks/config.py update
 interval=60
 
 [time]
-command=date +'%a:%D %H:%M:%S'
+markup=pango
+command=date +'%a:%d/%m/%y %H:%M:%S'
 interval=1
 
-[Restart_i3]
-full_text=<span foreground="white" background="#31638c">Restart_i3</span>
-markup=pango
-command=i3-msg -q restart
+#[Restart_i3]
+#full_text=<span foreground="white" background="#31638c">Restart_i3</span>
+#markup=pango
+#command=i3-msg -q restart
 
-[Reboot]
-full_text=<span foreground="white" background="#31638c">Reboot</span>
-markup=pango
-command=systemctl reboot
+#[Reboot]
+#full_text=<span foreground="white" background="#31638c">Reboot</span>
+#markup=pango
+#command=systemctl reboot
 
-[Bereitschaft]
-full_text=<span foreground="white" background="#31638c">Bereitschaft</span>
-markup=pango
-command=systemctl suspend
+#[Bereitschaft]
+#full_text=<span foreground="white" background="#31638c">Bereitschaft</span>
+#markup=pango
+#command=systemctl suspend
 
-[Logout]
-full_text=<span foreground="white" background="#31638c">Logout</span>
-markup=pango
-command=i3-msg exit
+#[Logout]
+#full_text=<span foreground="white" background="#31638c">Logout</span>
+#markup=pango
+#command=i3-msg exit
 
-[Poweroff]
-full_text=<span foreground="white" background="#31638c">Poweroff</span>
-markup=pango
-command=systemctl poweroff
+#[Poweroff]
+#full_text=<span foreground="white" background="#31638c">Poweroff</span>
+#markup=pango
+#command=systemctl poweroff
