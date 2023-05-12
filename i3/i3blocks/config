@@ -1,0 +1,34 @@
+#i3blocks config BY gandori
+color=#ffffff
+
+[CPU]
+label=CPU:
+command=printf "%b" "import psutil\nprint('{}%'.format(psutil.cpu_percent(1)))" | python3
+interval=1
+
+[RAM]
+label=RAM:
+command=printf "%b" "import psutil\nprint('{}%'.format(psutil.virtual_memory()[2]))" | python3
+interval=1
+
+[inet]
+color=#00ff00
+command=ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/'
+interval=60
+markup=pango
+
+
+#[installed]
+#label=Installed:
+#command=python3 ~/linux_setup/i3blocks/config.py installed
+#interval=55
+
+#[updates]
+#label=Updates:
+#command=python3 ~/linux_setup/i3blocks/config.py update
+#interval=60
+
+[time]
+markup=pango
+command=date +'%a:%d/%m/%y-%H:%M:%S'
+interval=1

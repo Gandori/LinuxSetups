@@ -1,0 +1,118 @@
+# i3 config by Gandori
+
+set $mod Mod4
+
+gaps inner 20px
+gaps outer 10px
+font pango:monospace 18
+title_align center
+focus_follows_mouse yes
+default_border pixel 3
+default_floating_border pixel 3
+
+# Background Image
+exec_always --no-startup-id feh --bg-scale ~/linux_setups/i3/wallpapers/dragonball3.jpg
+
+# Fullscreen
+bindsym $mod+a fullscreen toggle
+
+# Restart i3
+bindsym $mod+Shift+c restart
+
+# Reload Config File
+bindsym $mod+Shift+r reload
+
+# Kill Focused Window
+bindsym $mod+Shift+Return kill
+
+# Applications
+bindsym $mod+Return exec --no-startup-id gnome-terminal --hide-menubar
+bindsym $mod+m exec --no-startup-id virtualbox
+bindsym $mod+f exec --no-startup-id firefox
+bindsym $mod+Tab exec rofi -show window -config ~/linux_setups/i3/rofi/config
+bindsym $mod+d exec rofi -show run -config ~/linux_setups/i3/rofi/config
+bindsym $mod+g exec --no-startup-id gimp
+bindsym $mod+c exec --no-startup-id code
+bindsym $mod+n exec --no-startup-id nautilus
+
+# Change Focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move Focused Window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split Orientation Horizontal
+bindsym $mod+h split h
+
+# Split Orientation Vertical
+bindsym $mod+v split v
+
+# Change Container Layout
+bindsym $mod+s layout stacking
+bindsym $mod+b layout tabbed
+bindsym $mod+t layout toggle split
+
+# Workspaces
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"  
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+
+# Switch to Workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+
+# Move Focused Container to Workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+
+# Resize Window
+bindsym $mod+r mode "resize"
+mode "resize" {
+        bindsym Left resize shrink width 10 px
+        bindsym Down resize grow height 10 px
+        bindsym Up resize shrink height 10 px
+        bindsym Right resize grow width 10 px
+
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+# Status Bar
+bar {
+	status_command i3blocks -c ~/linux_setups/i3/i3blocks/config
+	colors {
+		background #252a33
+		statusline #141a21
+		separator ffffff
+	}
+	position top
+        padding 5px 10px 5px 0px
+	separator_symbol"|"
+        workspace_min_width 50px
+}

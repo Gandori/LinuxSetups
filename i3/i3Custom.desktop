@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=i3Custom
+Comment=improved dynamic tiling window manager
+Exec=i3 -c /home/gandori/linux_setups/i3/config
+TryExec=i3
+Type=Application
+X-LightDM-DesktopName=i3
+DesktopNames=i3
+Keywords=tiling;wm;windowmanager;window;manager;
