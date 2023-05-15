@@ -23,3 +23,11 @@ sudo apt update
 ```shell
 sudo apt install i3 i3blocks rofi feh powerline -y
 ```
+
+```shell
+sudo apt install lxappearance
+```
+
+```shell
+sudo apt install thunar
+```
