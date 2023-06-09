@@ -13,7 +13,7 @@ interval=1
 
 [inet]
 color=#00ff00
-command=ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/'
+command=ip addr | grep '192.168.178.' | awk '{print($2)}' | cut -f1 -d '/'
 interval=60
 markup=pango
 
