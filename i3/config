@@ -11,10 +11,7 @@ default_border pixel 3
 default_floating_border pixel 3
 
 # Background Image
-exec_always --no-startup-id feh --bg-scale ~/linux_setups/i3/wallpapers/dragonball3.jpg
-
-# Fullscreen
-bindsym $mod+a fullscreen toggle
+exec_always --no-startup-id feh --bg-scale ~/linux_setups/i3/wallpapers/008.jpg
 
 # Restart i3
 bindsym $mod+Shift+c restart
@@ -26,6 +23,7 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+Return kill
 
 # Applications
+bindsym $mod+q exec --no-startup-id gnome-calculator
 bindsym $mod+Return exec --no-startup-id gnome-terminal --hide-menubar
 bindsym $mod+m exec --no-startup-id virtualbox
 bindsym $mod+f exec --no-startup-id firefox
@@ -34,6 +32,7 @@ bindsym $mod+d exec rofi -show run -config ~/linux_setups/i3/rofi/config
 bindsym $mod+g exec --no-startup-id gimp
 bindsym $mod+c exec --no-startup-id code
 bindsym $mod+t exec --no-startup-id thunar
+bindsym $mod+a exec --no-startup-id audacity
 
 # Change Focus
 bindsym $mod+Left focus left
@@ -63,7 +62,6 @@ mode "Layout" {
         bindsym Escape mode "default"
         bindsym $mod+Space mode "default"
 }
-
 
 # Workspaces
 set $ws1 "1"
