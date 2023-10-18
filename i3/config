@@ -34,6 +34,10 @@ bindsym $mod+c exec --no-startup-id code
 bindsym $mod+t exec --no-startup-id thunar
 bindsym $mod+a exec --no-startup-id audacity
 
+bindsym $mod+s exec --no-startup-id gnome-screenshot
+# Ordner festlegen wo die Screenshots gespeicher werden sollen
+# gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/"
+
 # Change Focus
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
