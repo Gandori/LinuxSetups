@@ -1,7 +1,7 @@
 #.bash_aliases by gandori
 
-alias ll='ls -la --color=auto'
-alias dir='dir --color=auto'
+# alias ll='ls -la --color=auto'
+# alias dir='dir --color=auto'
 
 # #user start nano with custom config file
 # alias nano='nano -f $HOME/linux_setups/nano/nanorc'
