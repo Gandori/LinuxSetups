@@ -11,7 +11,7 @@ default_border pixel 3
 default_floating_border pixel 3
 
 # Background Image
-exec_always --no-startup-id feh --bg-scale ~/linux_setups/i3/wallpapers/008.jpg
+exec_always --no-startup-id feh --bg-scale ~/linux_setups/i3/wallpapers/016.png
 
 # Restart i3
 bindsym $mod+Shift+c restart
